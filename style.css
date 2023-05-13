@@ -110,24 +110,30 @@ nav .nav-link:hover {
   cursor: pointer;
   font-size: 25px;
 }
-.bar:focus {
-  font-size: 10px !important;
-}
 
+#toggle:checked ~ nav ul {
+  right: 0 !important;
+}
 /* responsive css */
 @media screen and (max-width: 768px) {
   .menu {
     flex-direction: column;
     position: absolute;
-    top: 10%;
-    right: 1%;
-    background-color: #121250;
+    top: 50px;
+    right: -100%;
+    background-color: var(--primary);
+    align-items: center;
+    transition: all 0.4s;
+    width: 30%;
+    height: 100vh;
   }
-
   nav {
     padding: 10px 0;
   }
   .bar {
     display: block;
+  }
+  .nav-head {
+    flex-direction: row-reverse;
   }
 }

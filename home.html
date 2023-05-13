@@ -19,8 +19,16 @@
 
 <body>
     <header class="bg-primary text-white">
+
+
         <div class="container">
-            <div class="d-flex items-center justify-between">
+
+            <div class="d-flex items-center justify-between nav-head">
+                <label for="toggle"><i class="fa-solid fa-bars bar d-none"
+                       id=""></i></label>
+                <input class="d-none"
+                       type="checkbox"
+                       id="toggle">
                 <nav class="d-flex justify-between items-center w-100">
                     <a href="home.html">
                         <img src="img/logo.png"
@@ -28,17 +36,19 @@
                              alt="logo"
                              width="100">
                     </a>
-                    <ul class="d-flex list-unstyled menu">
+                    <ul class="d-flex list-unstyled menu py-10">
                         <li class="mx-10 text-white"><a class="decoration-none text-white py-10 d-block px-20 nav-link"
                                href="home.html">Home</a></li>
                         <li class="mx-10 text-white"><a class="decoration-none text-white py-10 d-block px-20 nav-link"
                                href="blog.html">Blog</a></li>
                         <li class="mx-10 text-white"><a class="decoration-none text-white py-10 d-block px-20 nav-link"
                                href="contact.html">Contact</a></li>
+                        <li class="mx-10 text-white"><a class="decoration-none text-white py-10 d-block px-20 nav-link"
+                               href="contact.html">About</a></li>
                     </ul>
 
                 </nav>
-                <i class="fa-solid fa-bars bar d-none"></i>
+
             </div>
         </div>
     </header>
