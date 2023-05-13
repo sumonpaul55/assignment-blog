@@ -4,5 +4,47 @@
   box-sizing: border-box;
 }
 :root {
-  primary-color: #191970;
+  --primary: #191970;
+}
+/* reusable style */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
+}
+.bg-primary {
+  background-color: var(--primary);
+}
+.text-white {
+  color: white;
+}
+.p {
+  padding: 10px;
+}
+.py-10 {
+  padding: 10px 0;
+}
+.py-20 {
+  padding: 20px 0;
+}
+.d-flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.mx-20 {
+  margin: 0 20px;
+}
+.list-unstyled {
+  list-style: none;
+}
+.decoration-none {
+  text-decoration: none;
 }
