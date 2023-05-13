@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
 :root {
   --primary: #191970;
 }
@@ -12,25 +17,71 @@
   margin: auto;
   padding: 0 10px;
 }
+/* reusable width */
+.w-100 {
+  width: 100%;
+}
 .bg-primary {
   background-color: var(--primary);
+}
+.bg-white {
+  background-color: white;
 }
 .text-white {
   color: white;
 }
-.p {
-  padding: 10px;
+/* reusable display */
+.d-grid {
+  display: grid;
 }
-.py-10 {
-  padding: 10px 0;
-}
-.py-20 {
-  padding: 20px 0;
+.d-block {
+  display: block;
 }
 .d-flex {
   display: flex;
 }
+.d-none {
+  display: none;
+}
+/* ------------------------------------------- reuseable padding all ------------------------- */
+
+.p {
+  padding: 10px;
+}
+
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.px-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.px-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* ---------------------------------- reusable margins ---------------------------------- */
+.mx-20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.mx-10 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.m-0 {
+  margin: 0;
+}
+
 .align-center {
+  align-items: center;
+}
+.items-center {
   align-items: center;
 }
 .justify-between {
@@ -39,12 +90,44 @@
 .justify-center {
   justify-content: center;
 }
-.mx-20 {
-  margin: 0 20px;
-}
+
 .list-unstyled {
   list-style: none;
 }
 .decoration-none {
   text-decoration: none;
+}
+
+/* navigation bar */
+nav a {
+  transition: all 0.4s;
+}
+nav .nav-link:hover {
+  background: #121250;
+  box-shadow: inset 0 0 10px 0 white;
+}
+.fa-bars {
+  cursor: pointer;
+  font-size: 25px;
+}
+.bar:focus {
+  font-size: 10px !important;
+}
+
+/* responsive css */
+@media screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    right: 1%;
+    background-color: #121250;
+  }
+
+  nav {
+    padding: 10px 0;
+  }
+  .bar {
+    display: block;
+  }
 }

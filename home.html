@@ -7,30 +7,47 @@
           content="IE=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
     <title>Home || My blog</title>
     <link rel="stylesheet"
           href="style.css">
 </head>
 
 <body>
-    <header class="bg-primary py-20 text-white">
+    <header class="bg-primary text-white">
         <div class="container">
-            <nav class="d-flex justify-between">
-                <div class="">
-                    <div>MyBlog</div>
-                </div>
-                <ul class="d-flex list-unstyled ">
-                    <li class="mx-20 text-white"><a class="decoration-none text-white"
-                           href="home.html">Home</a></li>
-                    <li class="mx-20 text-white"><a class="decoration-none text-white"
-                           href="blog.html">Blog</a></li>
-                    <li class="mx-20 text-white"><a class="decoration-none text-white"
-                           href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="d-flex items-center justify-between">
+                <nav class="d-flex justify-between items-center w-100">
+                    <a href="home.html">
+                        <img src="img/logo.png"
+                             class="m-0"
+                             alt="logo"
+                             width="100">
+                    </a>
+                    <ul class="d-flex list-unstyled menu">
+                        <li class="mx-10 text-white"><a class="decoration-none text-white py-10 d-block px-20 nav-link"
+                               href="home.html">Home</a></li>
+                        <li class="mx-10 text-white"><a class="decoration-none text-white py-10 d-block px-20 nav-link"
+                               href="blog.html">Blog</a></li>
+                        <li class="mx-10 text-white"><a class="decoration-none text-white py-10 d-block px-20 nav-link"
+                               href="contact.html">Contact</a></li>
+                    </ul>
+
+                </nav>
+                <i class="fa-solid fa-bars bar d-none"></i>
+            </div>
         </div>
     </header>
 
+    <!-- font awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+            integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
