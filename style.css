@@ -6,7 +6,6 @@
 
 body {
   background-color: #f5f5f5;
-  overflow: hidden;
 }
 :root {
   --primary: #191970;
@@ -39,7 +38,11 @@ body {
 }
 .grid-col-4 {
   grid-template-columns: auto auto auto auto;
-  gap: 10px;
+  gap: 20px;
+}
+.grid-col-3 {
+  grid-template-columns: auto auto auto;
+  gap: 20px;
 }
 
 .d-block {
@@ -131,7 +134,7 @@ nav .nav-link:hover {
 
 /* ----------------------------------------- home page --------------------------------------------- */
 .hero {
-  background-image: linear-gradient(#0d0d0d9a, #0c0c0cb3), url(img/hero.jpg);
+  background-image: linear-gradient(#000000ba, #000000ba), url(img/hero.jpg);
   background-attachment: fixed;
   height: 50vh;
   background-size: cover;
@@ -140,6 +143,9 @@ nav .nav-link:hover {
 }
 .hero h1 {
   font-size: 60px;
+}
+.section-title {
+  font-size: 40px;
 }
 .post img {
   width: 100%;
@@ -155,7 +161,45 @@ nav .nav-link:hover {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   padding: 5px;
 }
+/* -------------------------------------------------- home page end----------------------------------------- */
+/* -------------------------------------------------- blog post----------------------------------------- */
+.main .layout {
+  display: flex;
+  gap: 20px;
+}
+.layout-left {
+  width: 75%;
+}
+.layout-right {
+  width: 25%;
+}
+.blog-top-second {
+  margin-top: 30px;
+}
+.sidebar {
+  margin-top: 100px;
+}
+/* layout right */
+.layout-right input {
+  padding: 10px;
+  border-radius: 5px;
+}
+.search-btn {
+  cursor: pointer;
+}
 /* responsive css */
+@media screen and (max-width: 992px) {
+  .main .layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .layout-left {
+    width: 100%;
+  }
+  .layout-right {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
   /* nav {
     position: relative;
@@ -183,7 +227,9 @@ nav .nav-link:hover {
   /* reusable grid tamplate */
   .grid-col-4 {
     grid-template-columns: auto auto;
-    gap: 10px;
+  }
+  .grid-col-3 {
+    grid-template-columns: auto;
   }
 }
 
