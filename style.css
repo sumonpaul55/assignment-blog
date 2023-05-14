@@ -179,6 +179,9 @@ nav .nav-link:hover {
 .sidebar {
   margin-top: 100px;
 }
+.most-recent-post {
+  margin-top: 50px;
+}
 /* layout right */
 .layout-right input {
   padding: 10px;
@@ -186,6 +189,20 @@ nav .nav-link:hover {
 }
 .search-btn {
   cursor: pointer;
+}
+.category {
+  margin-top: 50px;
+}
+.category ol {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.category ol li {
+  font-weight: bold;
+  margin: 5px 0;
+}
+.font-bold {
+  font-weight: bold;
 }
 /* responsive css */
 @media screen and (max-width: 992px) {
@@ -207,6 +224,7 @@ nav .nav-link:hover {
   .menu {
     flex-direction: column;
     position: absolute;
+    /* width: 100% !important; */
     top: 50px;
     left: -1000%;
     background-color: var(--primary);
