@@ -274,6 +274,12 @@ nav .nav-link:hover {
   background-color: var(--primary);
   color: white;
 }
+
+.about-us-page {
+  background-image: linear-gradient(#000000b6, #000000df), url(img/about.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
 /* responsive css */
 @media screen and (max-width: 992px) {
   .main .layout {
