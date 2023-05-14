@@ -163,6 +163,9 @@ nav .nav-link:hover {
 }
 /* -------------------------------------------------- home page end----------------------------------------- */
 /* -------------------------------------------------- blog post----------------------------------------- */
+.blog-top {
+  background-image: linear-gradient(#000000ba, #000000ba), url(img/blog.jpg) !important;
+}
 .main .layout {
   display: flex;
   gap: 20px;
@@ -211,6 +214,66 @@ nav .nav-link:hover {
 .font-bold {
   font-weight: bold;
 }
+.social-share {
+  margin-top: 80px;
+  background-color: var(--primary);
+  color: white;
+  padding: 20px 5px;
+}
+.social-share ul {
+  gap: 30px;
+  margin-top: 10px;
+}
+.fa-brands {
+  font-size: 30px !important;
+}
+.social-share ul li {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.social-share ul li:hover {
+  transform: scale(1.4) !important;
+}
+
+/* ------------------------------ contact us ------------------------------------- */
+.contact-us {
+  background-image: linear-gradient(#000000d6, #000000df), url(img/contact.jpg);
+  background-size: contain;
+  height: 30vh;
+  background-position: top;
+}
+.form {
+  width: 800px;
+  margin: auto;
+}
+.form label {
+  display: block;
+}
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+.form textarea {
+  width: 100%;
+}
+.name-email {
+  gap: 20px;
+}
+.submit {
+  cursor: pointer;
+}
+.form .submit:hover {
+  background-color: var(--primary);
+  color: white;
+}
 /* responsive css */
 @media screen and (max-width: 992px) {
   .main .layout {
@@ -228,6 +291,7 @@ nav .nav-link:hover {
   /* nav {
     position: relative;
   } */
+
   .menu {
     flex-direction: column;
     position: absolute;
@@ -255,6 +319,9 @@ nav .nav-link:hover {
   }
   .grid-col-3 {
     grid-template-columns: auto;
+  }
+  .form {
+    width: 100%;
   }
 }
 
