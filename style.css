@@ -179,8 +179,15 @@ nav .nav-link:hover {
 .sidebar {
   margin-top: 100px;
 }
+.post-page .sidebar {
+  margin-top: 50px;
+}
 .most-recent-post {
   margin-top: 50px;
+}
+.post-body p {
+  font-size: 20px;
+  line-height: 1.5;
 }
 /* layout right */
 .layout-right input {
