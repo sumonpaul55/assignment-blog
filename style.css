@@ -30,10 +30,18 @@ body {
 .text-white {
   color: white;
 }
-/* reusable display */
+.text-black {
+  color: #1f1f1f;
+}
+/* ------------------------------------reusable display ------------------------------------*/
 .d-grid {
   display: grid;
 }
+.grid-col-4 {
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
 .d-block {
   display: block;
 }
@@ -74,11 +82,15 @@ body {
   margin-left: 10px;
   margin-right: 10px;
 }
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .m-0 {
   margin: 0;
 }
 
-.align-center {
+.items-center {
   align-items: center;
 }
 .items-center {
@@ -92,12 +104,14 @@ body {
 }
 
 .list-unstyled {
-  list-style: none;
+  list-style: none !important;
 }
 .decoration-none {
   text-decoration: none;
 }
-
+.text-center {
+  text-align: center;
+}
 /* navigation bar */
 nav a {
   transition: all 0.4s;
@@ -110,17 +124,47 @@ nav .nav-link:hover {
   cursor: pointer;
   font-size: 25px;
 }
-
 #toggle:checked ~ nav ul {
-  right: 0 !important;
+  left: 0 !important;
+}
+/* navigation end */
+
+/* ----------------------------------------- home page --------------------------------------------- */
+.hero {
+  background-image: linear-gradient(#0d0d0d9a, #0c0c0cb3), url(img/hero.jpg);
+  background-attachment: fixed;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.hero h1 {
+  font-size: 60px;
+}
+.post img {
+  width: 100%;
+  height: 250px;
+}
+.post h1 {
+  margin-bottom: 10px;
+}
+.post .post-detail {
+  padding: 10px;
+}
+.grid-item {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  padding: 5px;
 }
 /* responsive css */
 @media screen and (max-width: 768px) {
+  /* nav {
+    position: relative;
+  } */
   .menu {
     flex-direction: column;
     position: absolute;
     top: 50px;
-    right: -100%;
+    left: -1000%;
     background-color: var(--primary);
     align-items: center;
     transition: all 0.4s;
@@ -135,5 +179,19 @@ nav .nav-link:hover {
   }
   .nav-head {
     flex-direction: row-reverse;
+  }
+  /* reusable grid tamplate */
+  .grid-col-4 {
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+  .grid-col-4 {
+    grid-template-columns: auto;
   }
 }
