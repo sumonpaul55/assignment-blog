@@ -27,3 +27,4 @@ function gradeCalculator(num) {
 }
 // gradeCalculator(60);
 gradeCalculator(0);
+// live test done
